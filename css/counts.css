@@ -1,0 +1,261 @@
+.first-my {
+    width: 345px;
+    padding: 0px;
+    text-align: center;
+}
+
+.first-my .result span {
+    width: 80px;
+    height: 80px;
+    display: inline-block;
+    margin: 0 4px 0 0px;
+    font-size: 48px;
+    background: #000;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2e1ff", endColorstr="#66b6fc", GradientType=0); /* IE6-9 */
+}
+
+.first-my .result {
+}
+
+.first-my .titles {
+    position: relative;
+    height: 0;
+    right: -23px;
+    width: 300px;
+}
+
+.first-my .titles span {
+    font-size: 10px;
+    position: relative;
+    top: 12px;
+}
+.first-my .titles span.ss {
+    right: 33px;
+}
+.first-my .titles span.mm {
+    right: 53px;
+}
+
+.first-my .titles span.hh {
+    right: 75px;
+}
+
+.first-my .titles span.dd {
+    right: 100px;
+}
+
+.first-my p.titloftimer {
+    font-size: 20px;
+    font-family: calibri;
+    margin: 0 auto;
+    left: 10px;
+    position: relative;
+}
+
+.clearf {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*ресет*/
+.timerhello span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.timerhello p {
+    font-size: 100%;
+    font: inherit;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    line-height: 17px;
+}
+
+p.hellotimercopy {
+    display: none !important;
+}
+.first-my-1 {
+    width: 220px;
+    padding: 0px;
+    text-align: center;
+}
+.first-my-1 .result span {
+    padding: 22px 12px 15px;
+    display: inline-block;
+    margin: 0 8px 0 -5px;
+    font-size: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #3a3a3a; /* Old browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2e1ff", endColorstr="#66b6fc", GradientType=0); /* IE6-9 */
+}
+
+.first-my-1.result {
+    float: right;
+}
+
+.first-my-1 .titles {
+    position: relative;
+    height: 0;
+    right: -23px;
+    width: 300px;
+}
+
+.first-my-1 .titles span {
+    font-size: 10px;
+    position: relative;
+    top: 12px;
+}
+.first-my-1 .titles span.ss {
+    right: 33px;
+}
+.first-my-1 .titles span.mm {
+    right: 53px;
+}
+
+.first-my-1 .titles span.hh {
+    right: 75px;
+}
+
+.first-my-1 .titles span.dd {
+    right: 100px;
+}
+
+.first-my-1 p.titloftimer {
+    font-size: 20px;
+    font-family: calibri;
+    margin: 0 auto;
+    left: 10px;
+    position: relative;
+}
+
+.clearf-1 {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*ресет*/
+.timerhello-1 span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.timerhello-1 p {
+    font-size: 100%;
+    font: inherit;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    line-height: 17px;
+}
+
+p.hellotimercopy-1 {
+    display: none !important;
+}
+
+.first-my-2 {
+    width: 220px;
+    padding: 0px;
+    text-align: center;
+}
+.first-my-2 .result span {
+    padding: 22px 12px 15px;
+    display: inline-block;
+    margin: 0 8px 0 -5px;
+    font-size: 20px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    background: #1fc3b6; /* Old browsers */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#b2e1ff", endColorstr="#66b6fc", GradientType=0); /* IE6-9 */
+}
+
+.first-my-2.result {
+    float: right;
+}
+
+.first-my-2 .titles {
+    position: relative;
+    height: 0;
+    right: -23px;
+    width: 300px;
+}
+
+.first-my-2 .titles span {
+    font-size: 10px;
+    position: relative;
+    top: 12px;
+}
+.first-my-2 .titles span.ss {
+    right: 33px;
+}
+.first-my-2 .titles span.mm {
+    right: 53px;
+}
+
+.first-my-2 .titles span.hh {
+    right: 75px;
+}
+
+.first-my-2 .titles span.dd {
+    right: 100px;
+}
+
+.first-my-2 p.titloftimer {
+    font-size: 20px;
+    font-family: calibri;
+    margin: 0 auto;
+    left: 10px;
+    position: relative;
+}
+
+.clearf-2 {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
+/*ресет*/
+.timerhello-2 span {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+.timerhello-2 p {
+    font-size: 100%;
+    font: inherit;
+    color: #fff;
+    font-size: 13px;
+    margin: 0 0 10px 0;
+    line-height: 17px;
+}
+
+p.hellotimercopy-2 {
+    display: none !important;
+}
+

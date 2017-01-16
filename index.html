@@ -1,0 +1,2965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Rabulus</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+<!--    <link href="/css/bootstrap.min.css" rel="stylesheet" media="screen">-->
+<!--    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">-->
+<!--     Owl Carousel -->
+<!--    <link href="/css/main.css" rel="stylesheet" media="screen">-->
+<!--    <link href="/css/counts.css" rel="stylesheet" media="screen">-->
+<!--    <link href="/css/owl.carousel.css" rel="stylesheet" media="screen">-->
+<!--    <link href="/css/owl.theme.css" rel="stylesheet" media="screen">-->
+<!--	<link href="/style.css" rel="stylesheet" media="screen">-->
+<!--    <link href="/css/style.css" rel="stylesheet" media="screen">-->
+<!--    <style>#page-preloader{position:fixed;left:0;top:0;right:0;bottom:0;background:#fff;z-index:30}.contpre small{font-size:25px}.contpre{width:250px;height:100px;position:absolute;left:50%;top:48%;margin-left:-125px;margin-top:-75px;color:#fff;font-size:40px;letter-spacing:-2px;text-align:center;line-height:35px}#page-preloader .spinner{position:absolute;width:41px;height:41px;background-size:41px;margin:-16px 0 0 -16px}</style>-->
+ <style>
+     @font-face {
+         font-family: "Roboto-Black";
+         font-style: normal;
+         font-weight: normal;
+         src: url("fonts/Roboto-Black/Roboto-Black.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Black/Roboto-Black.woff") format("woff"), url("fonts/Roboto-Black/Roboto-Black.ttf") format("truetype"); }
+
+     @font-face {
+         font-family: "Roboto-Medium";
+         font-style: normal;
+         font-weight: normal;
+         src: url("fonts/Roboto-Medium/Roboto-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Medium/Roboto-Medium.woff") format("woff"), url("fonts/Roboto-Medium/Roboto-Medium.ttf") format("truetype"); }
+
+
+
+
+     @font-face {
+         font-family: "Roboto-Bold";
+         font-style: normal;
+         font-weight: normal;
+         src: url("fonts/Roboto-Bold/Roboto-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Bold/Roboto-Bold.woff") format("woff"), url("fonts/Roboto-Bold/Roboto-Bold.ttf") format("truetype"); }
+
+
+     @font-face {
+         font-family: "Roboto-Regular";
+         font-style: normal;
+         font-weight: normal;
+         src: url("fonts/Roboto-Regular/Roboto-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Regular/Roboto-Regular.woff") format("woff"), url("fonts/Roboto-Regular/Roboto-Regular.ttf") format("truetype"); }
+
+
+     @font-face {
+         font-family: "Roboto-Light";
+         font-style: normal;
+         font-weight: normal;
+         src: url("fonts/Roboto-Light/Roboto-Light.eot?#iefix") format("embedded-opentype"), url("fonts/Roboto-Light/Roboto-Light.woff") format("woff"), url("fonts/Roboto-Light/Roboto-Light.ttf") format("truetype"); }
+
+</style> 
+   
+   
+   
+   
+   
+<style>
+
+
+.block-2 .content li:nth-child(3){margin-top:75px !important;}
+
+/* INPUT STYLE Web~Oman */
+input {
+  color: #B4B4B4 !important; }
+  input::-webkit-input-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  input::-moz-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  input:-ms-input-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  input::placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  input::focus:placeholder {
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+
+textarea {
+  color: #B4B4B4 !important; }
+  textarea::-webkit-input-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  textarea::-moz-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  textarea:-ms-input-placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  textarea::placeholder {
+    color: #B4B4B4 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+  textarea::focus:placeholder {
+    color: #B4B4B4!important; 
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+
+input::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input::-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:-moz-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:-ms-input-placeholder {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:focus::-webkit-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:focus::-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:focus:-moz-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+input:focus:-ms-input-placeholder {
+  opacity: 0;
+  -webkit-transition: opacity 0.3s ease;
+  transition: opacity 0.3s ease; }
+
+
+/* POPAP WEB~Oman*/
+
+
+.popap input {
+  color: #000 !important; }
+ .popap input::-webkit-input-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap input::-moz-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap input:-ms-input-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap input::placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap input::focus:placeholder {
+   color: #000 !important;
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+
+.popap textarea {
+  color: #000 !important; }
+ .popap textarea::-webkit-input-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap textarea::-moz-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap textarea:-ms-input-placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap textarea::placeholder {
+    color: #000 !important;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+ .popap textarea::focus:placeholder {
+    color: #000!important; 
+    opacity: 0;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease; }
+
+
+  
+  
+
+
+
+body {
+  font-size: 18px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  color: #4b4b4b;
+  background-color: #fff;
+  padding-right: 0 !important;
+  background-color: #ffffff;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+h1, h2, h3, h4 {
+  font-weight: 400;
+}
+
+.container {
+  position: relative;
+  font-size: 18px;
+  padding-left: 10px;
+  padding-right: 10px;
+  max-width: 960px;
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .container {
+    max-width: 590px;
+  }
+}
+@media (max-width: 768px) and (min-width: 320px) {
+  .container {
+    max-width: 260px;
+    padding: 0;
+  }
+}
+
+.modal-open {
+  overflow: hidden;
+}
+
+.block-1-form input[type=text]::-webkit-input-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=text]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-1-form input[type=text]::-moz-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=text]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-1-form input[type=tel]::-webkit-input-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=tel]::-moz-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=tel]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-1-form input[type=tel]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-1-form input[type=email]::-webkit-input-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=email]::-moz-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form input[type=email]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-1-form input[type=email]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-1-form textarea::-webkit-input-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form textarea::-moz-placeholder {
+  color: #bababa;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-1-form textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-1-form textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.forms input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms input[type=text]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.forms input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms input[type=text]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.forms input[type=email]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms input[type=email]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms input[type=email]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.forms input[type=email]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.forms textarea::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms textarea:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.forms textarea::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.forms textarea:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.tel-modal::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.tel-modal::-moz-placeholder {
+  color: #eee;
+}
+
+.block-modal input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=text]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-modal input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=text]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-modal input[type=tel]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=tel]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=tel]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-modal input[type=tel]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-modal input[type=email]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=email]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-modal input[type=email]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-modal input[type=email]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=text]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=text]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=text]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=text]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=tel]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=tel]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=tel]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=tel]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=email]::-webkit-input-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=email]::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.block-2-form input[type=email]:focus::-webkit-input-placeholder {
+  opacity: 0;
+}
+
+.block-2-form input[type=email]:focus::-moz-placeholder {
+  opacity: 0;
+}
+
+body * {
+  max-height: 1000000em !important;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  max-height: 999999px !important;
+}
+
+html * {
+  max-height: 1000000px !important;
+}
+
+.modal-dialog {
+  z-index: 2000;
+  max-width: 375px;
+  width: 100%;
+  margin: 80px auto;
+}
+
+.modal-content {
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-body {
+  padding: 0px;
+  font-family: "Roboto", sans-serif;
+}
+.modal-body .mess_error {
+  position: relative;
+  left: 0px;
+  color: #ffffff;
+  top: -10px;
+}
+
+.close {
+  z-index: 2001;
+  position: absolute;
+  color: #000;
+  opacity: 1;
+  right: 8px;
+  top: 8px;
+  font-size: 20px;
+  width: 22px;
+  line-height: 22px;
+  height: 22px;
+  border: 0px solid #000 !important;
+  text-shadow: 0 0px 0 transparent;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+.close:focus, .close:hover {
+  opacity: 1;
+  color: #000;
+  -moz-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
+
+.block-modal-title {
+  color: #fff;
+  text-align: center;
+  margin-top: 26px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  line-height: 36px;
+  font-size: 34px;
+}
+
+.block-modal {
+  text-align: center;
+  margin-left: 467px;
+}
+
+.modal-border {
+  width: 273px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+.block-modal input[type=text] {
+  width: 258px;
+  height: 50px;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  color: #333333;
+  font-size: 14px;
+  padding-left: 34px;
+  background-position: 3px 4px;
+  margin-right: 0px;
+  margin-bottom: 18px;
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 0px;
+}
+
+.videos {
+  list-style: none;
+}
+
+.block-modal input[type=tel] {
+  width: 258px;
+  height: 50px;
+  background-color: #f7f7f7;
+  background-repeat: no-repeat;
+  color: #333333;
+  font-size: 14px;
+  padding-left: 34px;
+  background-position: 4px 5px;
+  margin-right: 0px;
+  margin-bottom: 18px;
+  border: 0;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-modal input[type=email] {
+  width: 258px;
+  height: 50px;
+  background-color: #f7f7f7;
+  border: 0;
+  background-repeat: no-repeat;
+  color: #333333;
+  font-size: 14px;
+  padding-left: 34px;
+  background-position: 5px 5px;
+  margin-right: 0px;
+  margin-bottom: 18px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-modal textarea {
+  width: 296px;
+  height: 105px;
+  border: 1px solid #c4c4c4;
+  border-radius: 5px;
+  background-repeat: no-repeat;
+  color: #333333;
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 27px;
+  background-position: 5px 5px;
+  margin-right: 0px;
+  margin-bottom: 6px;
+  resize: none;
+  outline: none;
+}
+
+.block-modal button {
+  width: 258px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #22A300;
+  border: 2px solid #22A300;
+  text-align: center;
+  line-height: 38px;
+  font-size: 24px;
+  margin-top: 0px;
+  color: #ffffff;
+  font-family: "UniSans-Bold";
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-modal button:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.block-modal input[type=submit] {
+  width: 258px;
+  height: 50px;
+  margin: 0 auto;
+  background-color: #34aacf;
+  border: 2px solid #34aacf;
+  text-align: center;
+  line-height: 38px;
+  font-size: 24px;
+  margin-top: 0px;
+  color: #ffffff;
+  font-family: "UniSans-Bold";
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  outline: none;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.block-modal input[type=submit]:hover {
+  background-color: transparent;
+  color: #fff;
+}
+
+.block-modal iframe {
+  min-height: 500px;
+  margin-top: 0px;
+}
+
+.block-modal-text {
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+
+.block-modal-ul {
+  list-style: none;
+  margin-top: 20px;
+  text-align: center;
+}
+.block-modal-ul li {
+  display: inline-block;
+  vertical-align: top;
+  max-width: 300px;
+  width: 100%;
+  margin-right: 15px;
+  margin-bottom: 20px;
+}
+.block-modal-ul li .border {
+  height: 300px;
+  border: 2px solid #34aacf;
+  position: relative;
+  overflow: hidden;
+}
+.block-modal-ul li .border img {
+  max-width: 300px;
+  width: 100%;
+  height: 300px;
+}
+.block-modal-ul li .pdf {
+  max-width: 228px;
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-position: 4px 5px;
+  margin-right: 0px;
+  margin-bottom: 6px;
+  border: 2px solid #34aacf;
+  font-family: "UniSans-Bold";
+  margin-left: 4px;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+  line-height: 50px;
+  margin: 20px auto 0;
+}
+.block-modal-ul li .pdf:after {
+  content: '';
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 0px;
+  height: 50px;
+  background-color: #34aacf;
+  z-index: -1;
+  opacity: 0;
+}
+.block-modal-ul li .pdf:hover:after {
+  width: 100%;
+  opacity: 1;
+}
+.block-modal-ul li .pdf a {
+  display: block;
+  height: 100%;
+  color: #fff;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+@-moz-keyframes lefts {
+  0% {
+    -moz-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -moz-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+@-webkit-keyframes lefts {
+  0% {
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+@keyframes lefts {
+  0% {
+    -moz-transform: translateX(0px);
+    -ms-transform: translateX(0px);
+    -webkit-transform: translateX(0px);
+    transform: translateX(0px);
+  }
+  100% {
+    -moz-transform: translateX(5px);
+    -ms-transform: translateX(5px);
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+}
+.field {
+  position: relative;
+}
+
+.mess_error {
+  position: absolute;
+  left: 24px;
+  font-size: 17px;
+  color: #ffffff;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .mess_error {
+    position: relative;
+    left: 0px;
+  }
+}
+
+@-moz-keyframes arrow {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@-webkit-keyframes arrow {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+@keyframes arrow {
+  0% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(5px);
+  }
+}
+.block-1 {
+  background-image: url("img/block-1.png");
+  min-height: 650px;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 {
+    min-height: 400px;
+  }
+}
+.block-1 .header {
+  min-height: 80px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.block-1 .header .logo {
+  background-image: url("img/logo.png");
+  width: 147px;
+  height: 42px;
+  background-repeat: no-repeat;
+  margin-top: 35px;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+.block-1 .header .contact {
+    padding-top: 30px;
+    text-align: right;
+    font-family: "Roboto-Light";
+}
+.block-1 .header .contact .tel {
+  font-weight: 300;
+  color: #ffffff;
+  font-size: 16px;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 .header .contact .tel {
+    font-size: 14px;
+  }
+}
+.block-1 .header .contact .contact-us {
+font-weight: 300;
+    color: #fea900;
+    font-size: 16px;
+    text-decoration: underline;
+    text-align: right;
+    font-family: "Roboto-Light";
+    letter-spacing: .02em;
+    position: relative;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 .header .contact .contact-us {
+    font-size: 14px;
+  }
+}
+.block-1 .content {
+    margin-top: 137px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+
+    
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 .content {
+    margin-top: 20px;
+  }
+}
+.block-1 .content .left h1 {
+     font-size: 45px;
+    color: #ffffff;
+    text-transform: uppercase;
+    max-width: 480px;
+    font-weight: 700;
+    line-height: 1.2em;
+}
+.block-1 .content .left h1 span {
+  color: #fea900;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 .content .left h1 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.block-1 .content .left h3 {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 300;
+    max-width: 310px;
+    margin-top: 16px;
+    letter-spacing: 0px;
+    line-height: 1.4em;
+    font-family: "Roboto-Light";
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-1 .content .left h3 {
+    font-size: 16px;
+  }
+}
+.block-1 .content .right {
+    font-weight: 300;
+    font-size: 12px;
+    color: #fea900;
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -webkit-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    text-transform: uppercase;
+    margin-top: 200px;
+    letter-spacing: 3px;
+    font-family: "Roboto-Light";
+    margin-bottom: -80px;
+    margin-left: 00px;
+    margin-right: 105px;
+    height: 50px;
+}
+.block-1 .content .right a {
+    cursor: pointer;
+  padding-right: 6px;
+  color: #fea900;
+  font-size: 14px;
+  -moz-animation: arrow 1.4s linear alternate infinite;
+  -webkit-animation: arrow 1.4s linear alternate infinite;
+  animation: arrow 1.4s linear alternate infinite;
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .block-1 .content .right {
+    display: none;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.block-2 {
+  background-image: url("img/block-2.png");
+  min-height: 900px;
+ 
+}
+.block-2 h3 {
+  font-size: 12px;
+  font-weight: 300;
+  color: #000000;
+  margin-top: 140px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 h3 {
+    font-size: 10px;
+    margin-top: 60px;
+  }
+}
+    h2{
+     font-family: "Roboto-Bold" !important;   
+        
+    }   
+    
+    
+.block-2 h2 {
+ font-size: 45px;
+    color: #000;
+    text-transform: uppercase;
+   
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.2em;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 h2 {
+    font-size: 24px;
+    line-height: 28px;
+  }
+}
+.block-2 .content {
+  max-width: 780px;
+  margin-top: 72px;
+  list-style: none;
+}
+.block-2 .content li {
+  margin-bottom: 96px;
+  float: left;
+  width:100%;
+ 
+}
+.block-2 .content li .number {
+  background-image: url("img/block-2-li-1.png");
+  width: 166px;
+  height: 235px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li .number {
+    width: 74px;
+    height: 116px;
+    vertical-align: top;
+  }
+}
+.block-2 .content li .info {
+  display: inline-block;
+  vertical-align: bottom;
+  max-width: 300px;
+  margin-left: 45px;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li .info {
+    max-width: 150px;
+    vertical-align: top;
+    margin-left: 22px;
+  }
+}
+.block-2 .content li .info .main-text {
+  font-size: 27px;
+    line-height: 27px;
+    font-weight: 700;
+    color: #000000;
+    width: 500px;
+    font-family: "Roboto-Black";
+    letter-spacing: .1em;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li .info .main-text {
+    font-size: 17px;
+    line-height: 22px;
+  }
+}
+.block-2 .content li .info .text {
+ font-size: 18px;
+    line-height: 22px;
+    font-weight: 300;
+    margin-top: 28px;
+    width: 480px;
+    font-family: "Roboto-Light";
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li .info .text {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.block-2 .content li:nth-child(2n) {
+
+      padding-left: 40%;
+
+}
+.block-2 .content li:nth-child(2n) .number {
+  vertical-align: top;
+  background-image: url("img/block-2-li-2.png");
+  width: 166px;
+  height: 238px;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li:nth-child(2n) .number {
+    width: 74px;
+    height: 116px;
+    vertical-align: top;
+  }
+}
+.block-2 .content li:nth-child(2n) .info {
+  vertical-align: top;
+}
+@media (max-width: 991px) and (min-width: 320px) {
+  .block-2 .content li:nth-child(2n) {
+padding-left:20%;
+  }
+}
+.block-2 .content li:nth-child(3) .number {
+  background-image: url("img/block-2-li-3.png");
+  width: 164px;
+  height: 241px;
+  -webkit-background-size: contain;
+  background-size: contain;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li:nth-child(3) .number {
+    width: 74px;
+    height: 116px;
+    vertical-align: top;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .content li {
+    margin-bottom: 40px;
+  }
+}
+.block-2 .bot-block {
+    max-width: 500px;
+    margin: 50px auto 132px;
+    position: relative;
+    font-family: "Roboto-Black";
+}
+@media (max-width: 992px) and (min-width: 320px) {
+  .block-2 .bot-block {
+    margin: 168px 0 100px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .bot-block {
+    margin: 35px 0 40px;
+  }
+}
+.block-2 .bot-block .small-text {
+    font-size: 12px;
+    font-weight: 300;
+    color: #000000;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-family: "Roboto-Light";
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .bot-block .small-text {
+    font-size: 10px;
+  }
+}
+.block-2 .bot-block .big-text {
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 20px;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+}
+.block-2 .bot-block .big-text:after {
+  width: 510px;
+  height: 94px;
+  background-color: #f5f5f5;
+  position: absolute;
+  content: '';
+  display: block;
+  top: 24px;
+  left: -50px;
+  z-index: -1;
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .bot-block .big-text:after {
+    width: 260px;
+    height: 50px;
+    left: 0px;
+    top: 8px;
+  }
+}
+@media (max-width: 767px) and (min-width: 320px) {
+  .block-2 .bot-block .big-text {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 10px;
+  }
+}
+
+
+
+
+
+
+
+
+
+nav#primary {
+  z-index: 5;
+  position: absolute;
+  top: 160px;
+  right: 0;
+}
+
+nav#primary ul {
+  position: fixed;
+  list-style: none;
+      margin-left: -50px;
+}
+
+nav#primary li {
+  position: relative;
+}
+
+nav#primary a {
+     display: block;
+    height: 38px;
+    width: 38px;
+    -moz-border-radius: 100%;
+    -webkit-border-radius: 100%;
+    border-radius: 100%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 15px;
+    line-height: 36px;
+      border: 1px solid #b7bac0;
+    margin-bottom: 10px;
+    color: #000;
+    background: rgb(255, 255, 255);
+    font-family: "Roboto-Light";
+    text-decoration: none;
+}
+
+nav#primary a:hover, nav#primary a.active {
+   background: rgba(255, 255, 255, 1);
+     border: 1px solid #fea900;
+      color: #000;
+}
+
+nav#primary h3 {
+ display: none;
+    position: absolute;
+    right: 45px;
+    top: -10px;
+    font-weight: 100;
+    font-size: 12px;
+
+    white-space: nowrap;
+ background: rgba(255, 255, 255, .8);
+    padding: 5px;
+    border-radius: 5px;
+    font-family: "Roboto-Light";
+
+     color: #000;
+}
+    
+
+
+nav.next-prev {
+  margin: 20px 0 0 0;
+}
+
+
+@media (max-width: 992px) and (min-width: 769px) {
+
+
+			.layer{
+				
+				transform: none !important;
+			}
+			h2,h1,.bot-block{
+				
+				   max-width: 100% !important;
+			}
+			
+
+
+}
+
+
+
+@media only screen and (max-width: 768px) and (min-width: 540px){
+    
+    .block-1 .content .left{
+        
+        width: 100%
+    }
+    .block-1 .content .left h1 {
+    font-size: 34px;
+    line-height: 28px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+}
+    
+    .block-1 .content .left h3 {
+   
+    max-width: 100%;
+    }
+	
+	.container {
+    position: relative;
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+	
+		.block-1 .header .contact {
+		padding-top: 35px;
+		text-align: center;
+	}
+	
+	.block-1 .header {
+			min-height: 80px;
+			display: -webkit-flex;
+			display: inline-block;
+			-webkit-justify-content: space-between;
+			justify-content: space-between;
+		}
+		
+		
+		.container {
+			max-width: 100%;
+		}
+
+			.layer{
+				
+				transform: none !important;
+			}
+		.bot-block{
+				    text-align: center;
+				   max-width: 100% !important;
+			}
+			
+			.block-1{
+				    min-height: auto;
+				text-align:center;
+				padding-bottom:100px;
+			}
+			
+			.block-1 .content{
+				
+				margin-top:100px;
+			}
+			
+			
+			
+			
+			
+}
+
+
+@media only screen and (max-width: 540px) and (min-width: 320px){
+    
+   
+    
+    .block-1 .content .left h1 {
+    font-size: 1.2em;
+    line-height: 28px;
+    line-height: 1.2;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    max-width: 100%;
+}		
+		
+	
+	.block-1 .content .left h1 {
+    font-size: 20px;
+    line-height: 28px;
+}
+	
+	.block-1 .header {
+		display: inline-block;
+
+	}
+	
+
+	
+	.container {
+    position: relative;
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+	
+	h2 {
+
+    font-size: 1em !important;
+	}
+		
+		.block-1 .header .contact {
+			padding-top: 35px;
+			text-align: center;
+		}
+		.container {
+			max-width: 100%;
+		}
+
+			.layer{
+				
+				transform: none !important;
+			}
+			h2,h1,h3,.bot-block{
+				    text-align: center;
+				   max-width: 100% !important;
+			}
+			
+			.block-1{
+				    min-height: auto;
+				text-align:center;
+				padding-bottom:35px;
+			}
+			
+			.block-1 .content{
+				
+				margin-top:20px;
+			}
+			.block-8 .bot-block .big-text {
+    font-size: 1.5em!important;
+    line-height: 44px;
+    margin-top: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+}
+
+
+	@media (max-width: 650px) and (min-width: 200px){
+		
+		.block-1 .content .right{
+				display:none;
+			}
+				.block-4 .tabs .tab-content .content .left {
+				max-width: 100%;
+				text-align: center;
+				}
+				
+				.block-4 ul li {
+					margin-top: 0px;
+					margin-bottom: 0px;
+					text-align: center;
+				}
+				.block-4 .tabs .tab-content .content .right {
+				max-width: 100%;
+				width: 100%;
+				min-height: auto !important;
+				background-color: #ffa100;
+				-moz-border-radius: 5px;
+				-webkit-border-radius: 5px;
+				border-radius: 5px;
+				min-height: 352px;
+				color: #ffffff;
+				font-weight: 300;
+				font-size: 18px;
+				line-height: 24px;
+				padding: 40px;
+			}
+			
+			.block-4 .tabs .nav-tabs li {
+				margin-top: 0px;
+				margin-bottom: 0px;
+				text-align: center;
+			}
+			
+			.block-8 .block-8-ul{
+				    margin-top: 35px;
+			}
+			
+		.block-4 .tabs .nav-tabs > li > a {
+    width: 100% !important;
+    font-size: 11px;
+    padding: 0px;
+    text-align: center;
+    height: 32px;
+    line-height: 32px;
+    margin-bottom: 0px;
+}
+
+.block-4 .tabs .tab-content .content .left {
+    max-width: 100% !important;
+}
+
+.block-4 .tabs .tab-content .content .right {
+    max-width: 100% !important;
+    margin-top: 20px;
+    font-size: 13px;
+}
+	}
+
+
+
+@media only screen and (max-width: 319px) and (min-width: 200px){
+	.block-1 .content .right{
+				display:none;
+			}
+	.block-1 .content .left h1 {
+    font-size: 20px;
+    line-height: 28px;
+}
+	
+	.block-1 .header {
+		display: inline-block;
+
+	}
+	.block-8 .bot-block .big-text {
+    font-size: 1.5em!important;
+    line-height: 44px;
+    margin-top: 20px;
+    font-weight: 700;
+    position: relative;
+    z-index: 1;
+}
+
+	
+	.container {
+    position: relative;
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+}
+	
+	h2 {
+
+    font-size: 1em !important;
+	}
+		
+		.block-1 .header .contact {
+			padding-top: 35px;
+			text-align: center;
+		}
+		.container {
+			max-width: 100%;
+		}
+
+			.layer{
+				
+				transform: none !important;
+			}
+			h2,h1,h3,.bot-block{
+				    text-align: center;
+				   max-width: 100% !important;
+			}
+			
+			.block-1{
+				    min-height: auto;
+				text-align:center;
+				padding-bottom:35px;
+			}
+			
+			.block-1 .content{
+				
+				margin-top:20px;
+			}
+    
+}
+
+.container {
+    position: relative;
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    max-width: 960px
+}
+
+@media(max-width:768px) and (min-width:540px) {
+    .container {
+        max-width: 590px
+    }
+}
+
+   textarea,area{ resize: both !important; }
+.form_input .field textarea{
+}
+
+
+</style>
+   
+   
+   
+    <style>.md-show.md-effect-18~.container,.md-show.md-effect-19~.container{overflow:hidden;height:100%} .md-perspective body{height:100%;overflow:hidden}.md-perspective body{-webkit-perspective:600px;-moz-perspective:600px;perspective:600px}.container{min-height:100%}.md-modal{position:fixed;top:50%;left:50%;width:50%;max-width:630px;min-width:320px;height:auto;z-index:2000;visibility:hidden;-webkit-backface-visibility:hidden;-moz-backface-visibility:hidden;backface-visibility:hidden;-webkit-transform:translateX(-50%) translateY(-50%);-moz-transform:translateX(-50%) translateY(-50%);-ms-transform:translateX(-50%) translateY(-50%);transform:translateX(-50%) translateY(-50%)} .md-show{visibility:visible}.md-overlay{position:fixed;width:100%;height:100%;visibility:hidden;top:0;left:0;z-index:1000;opacity:0;background:rgba(0,0,0,.8);-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show~.md-overlay{opacity:1;visibility:visible}.md-content{background:#fff;position:relative;border-radius:3px;margin:0 auto}.md-content h3{margin:0;padding:.4em;text-align:center;font-size:2.4em;font-weight:300;opacity:.8;background:rgba(0,0,0,.1);border-radius:3px 3px 0 0}.md-content>div{padding:0px 40px 20px 40px;margin:0 1px;font-weight:300}.md-content>div p{margin:0;padding:10px 0}.md-content>div ul{margin:0;padding:0 0 30px 20px}.md-content>div ul li{padding:5px 0}.md-effect-1 .md-content{-webkit-transform:scale(.7);-moz-transform:scale(.7);-ms-transform:scale(.7);transform:scale(.7);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-1 .md-content{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:1}.md-effect-2 .md-content{-webkit-transform:translateX(20%);-moz-transform:translateX(20%);-ms-transform:translateX(20%);transform:translateX(20%);opacity:0;-webkit-transition:all .3s cubic-bezier(.25,.5,.5,.9);-moz-transition:all .3s cubic-bezier(.25,.5,.5,.9);transition:all .3s cubic-bezier(.25,.5,.5,.9)}.md-effect-3 .md-content,.md-effect-7 .md-content{-webkit-transition:all .3s;-moz-transition:all .3s}.md-show.md-effect-2 .md-content{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);opacity:1}.md-effect-3 .md-content{-webkit-transform:translateY(20%);-moz-transform:translateY(20%);-ms-transform:translateY(20%);transform:translateY(20%);opacity:0;transition:all .3s}.md-show.md-effect-3 .md-content{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1}.md-effect-4 .md-content{-webkit-transform:scale(0) rotate(720deg);-moz-transform:scale(0) rotate(720deg);-ms-transform:scale(0) rotate(720deg);transform:scale(0) rotate(720deg);opacity:0}.md-effect-4 .md-content,.md-show.md-effect-4~.md-overlay{-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}.md-show.md-effect-4 .md-content{-webkit-transform:scale(1) rotate(0);-moz-transform:scale(1) rotate(0);-ms-transform:scale(1) rotate(0);transform:scale(1) rotate(0);opacity:1}.md-effect-5.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px;perspective:1300px}.md-effect-6.md-modal,.md-effect-8.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px}.md-effect-5 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:translateZ(600px) rotateX(20deg);-moz-transform:translateZ(600px) rotateX(20deg);-ms-transform:translateZ(600px) rotateX(20deg);transform:translateZ(600px) rotateX(20deg);opacity:0}.md-show.md-effect-5 .md-content{-webkit-transition:all .3s ease-in;-moz-transition:all .3s ease-in;transition:all .3s ease-in;-webkit-transform:translateZ(0) rotateX(0);-moz-transform:translateZ(0) rotateX(0);-ms-transform:translateZ(0) rotateX(0);transform:translateZ(0) rotateX(0);opacity:1}.md-effect-6.md-modal{perspective:1300px}.md-effect-6 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:translate(30%) translateZ(600px) rotate(10deg);-moz-transform:translate(30%) translateZ(600px) rotate(10deg);-ms-transform:translate(30%) translateZ(600px) rotate(10deg);transform:translate(30%) translateZ(600px) rotate(10deg);opacity:0}.md-show.md-effect-6 .md-content{-webkit-transition:all .3s ease-in;-moz-transition:all .3s ease-in;transition:all .3s ease-in;-webkit-transform:translate(0) translateZ(0) rotate(0);-moz-transform:translate(0) translateZ(0) rotate(0);-ms-transform:translate(0) translateZ(0) rotate(0);transform:translate(0) translateZ(0) rotate(0);opacity:1}.md-effect-7{top:0;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);transform:translateX(-50%)}.md-effect-7 .md-content{-webkit-transform:translateY(-200%);-moz-transform:translateY(-200%);-ms-transform:translateY(-200%);transform:translateY(-200%);transition:all .3s;opacity:0}.md-effect-8 .md-content,.md-effect-9 .md-content{-webkit-transition:all .3s;-moz-transition:all .3s}.md-show.md-effect-7 .md-content{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);border-radius:0 0 3px 3px;opacity:1}.md-effect-8.md-modal{perspective:1300px}.md-effect-10.md-modal,.md-effect-9.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px}.md-effect-8 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:rotateY(-70deg);-moz-transform:rotateY(-70deg);-ms-transform:rotateY(-70deg);transform:rotateY(-70deg);transition:all .3s;opacity:0}.md-show.md-effect-8 .md-content{-webkit-transform:rotateY(0);-moz-transform:rotateY(0);-ms-transform:rotateY(0);transform:rotateY(0);opacity:1}.md-effect-9.md-modal{perspective:1300px}.md-effect-9 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:rotateX(-70deg);-moz-transform:rotateX(-70deg);-ms-transform:rotateX(-70deg);transform:rotateX(-70deg);transition:all .3s;opacity:0}.md-show.md-effect-9 .md-content{-webkit-transform:rotateX(0);-moz-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0);opacity:1}.md-effect-10.md-modal{perspective:1300px}.md-effect-13.md-modal,.md-effect-14.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px}.md-effect-10 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:rotateX(-60deg);-moz-transform:rotateX(-60deg);-ms-transform:rotateX(-60deg);transform:rotateX(-60deg);-webkit-transform-origin:50% 0;-moz-transform-origin:50% 0;transform-origin:50% 0;opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-10 .md-content{-webkit-transform:rotateX(0);-moz-transform:rotateX(0);-ms-transform:rotateX(0);transform:rotateX(0);opacity:1}.md-effect-11 .md-content{-webkit-transform:scale(2);-moz-transform:scale(2);-ms-transform:scale(2);transform:scale(2);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-11 .md-content{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:1}.md-effect-12 .md-content{-webkit-transform:scale(.8);-moz-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8);opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-12~.md-overlay{background:#e74c3c}.md-effect-12 .md-content,.md-effect-12 .md-content h3{background:0 0}.md-show.md-effect-12 .md-content{-webkit-transform:scale(1);-moz-transform:scale(1);-ms-transform:scale(1);transform:scale(1);opacity:1}.md-effect-13.md-modal{perspective:1300px}.md-effect-13 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:translateZ(-3000px) rotateY(90deg);-moz-transform:translateZ(-3000px) rotateY(90deg);-ms-transform:translateZ(-3000px) rotateY(90deg);transform:translateZ(-3000px) rotateY(90deg);opacity:0}.md-show.md-effect-13 .md-content{-webkit-animation:slit .7s forwards ease-out;-moz-animation:slit .7s forwards ease-out;animation:slit .7s forwards ease-out}@-webkit-keyframes slit{50%{-webkit-transform:translateZ(-250px) rotateY(89deg);opacity:.5;-webkit-animation-timing-function:ease-out}100%{-webkit-transform:translateZ(0) rotateY(0);opacity:1}}@-moz-keyframes slit{50%{-moz-transform:translateZ(-250px) rotateY(89deg);opacity:.5;-moz-animation-timing-function:ease-out}100%{-moz-transform:translateZ(0) rotateY(0);opacity:1}}@keyframes slit{50%{transform:translateZ(-250px) rotateY(89deg);opacity:1;animation-timing-function:ease-in}100%{transform:translateZ(0) rotateY(0);opacity:1}}.md-effect-14.md-modal{perspective:1300px}.md-effect-14 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:translateY(100%) rotateX(90deg);-moz-transform:translateY(100%) rotateX(90deg);-ms-transform:translateY(100%) rotateX(90deg);transform:translateY(100%) rotateX(90deg);-webkit-transform-origin:0 100%;-moz-transform-origin:0 100%;transform-origin:0 100%;opacity:0;-webkit-transition:all .3s ease-out;-moz-transition:all .3s ease-out;transition:all .3s ease-out}.md-show.md-effect-14 .md-content{-webkit-transform:translateY(0) rotateX(0);-moz-transform:translateY(0) rotateX(0);-ms-transform:translateY(0) rotateX(0);transform:translateY(0) rotateX(0);opacity:1}.md-effect-15.md-modal{-webkit-perspective:1300px;-moz-perspective:1300px;perspective:1300px}.md-effect-15 .md-content{-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d;-webkit-transform:translateZ(100px) translateX(-30%) rotateY(90deg);-moz-transform:translateZ(100px) translateX(-30%) rotateY(90deg);-ms-transform:translateZ(100px) translateX(-30%) rotateY(90deg);transform:translateZ(100px) translateX(-30%) rotateY(90deg);-webkit-transform-origin:0 100%;-moz-transform-origin:0 100%;transform-origin:0 100%;opacity:0;-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-15 .md-content{-webkit-transform:translateZ(0) translateX(0) rotateY(0);-moz-transform:translateZ(0) translateX(0) rotateY(0);-ms-transform:translateZ(0) translateX(0) rotateY(0);transform:translateZ(0) translateX(0) rotateY(0);opacity:1}.md-show.md-effect-16~.md-overlay{background:rgba(180,46,32,.5)}.md-show.md-effect-16~.container{-webkit-filter:blur(3px);-moz-filter:blur(3px);filter:blur(3px)}.md-effect-16 .md-content{-webkit-transform:translateY(-5%);-moz-transform:translateY(-5%);-ms-transform:translateY(-5%);transform:translateY(-5%);opacity:0}.md-effect-16 .md-content,.md-show.md-effect-16~.container{-webkit-transition:all .3s;-moz-transition:all .3s;transition:all .3s}.md-show.md-effect-16 .md-content{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1}.md-show.md-effect-17~.container{height:100%;overflow:hidden;-webkit-transition:-webkit-transform .3s;-moz-transition:-moz-transform .3s;transition:transform .3s}.md-show.md-effect-17~.container,.md-show.md-effect-17~.md-overlay{-webkit-transform:rotateX(-2deg);-moz-transform:rotateX(-2deg);-ms-transform:rotateX(-2deg);transform:rotateX(-2deg);-webkit-transform-origin:50% 0;-moz-transform-origin:50% 0;transform-origin:50% 0;-webkit-transform-style:preserve-3d;-moz-transform-style:preserve-3d;transform-style:preserve-3d}.md-effect-17 .md-content{opacity:0;-webkit-transform:translateY(200%);-moz-transform:translateY(200%);-ms-transform:translateY(200%);transform:translateY(200%)}.md-show.md-effect-17 .md-content{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1;-webkit-transition:all .3s .2s;-moz-transition:all .3s .2s;transition:all .3s .2s}.md-show.md-effect-18~.md-overlay{background:rgba(143,27,15,.8);-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}.md-show.md-effect-18~.container,.md-show.md-effect-18~.md-overlay{-webkit-transform-style:preserve-3d;-webkit-transform-origin:0 50%;-webkit-animation:rotateRightSideFirst .5s forwards ease-in;-moz-transform-style:preserve-3d;-moz-transform-origin:0 50%;-moz-animation:rotateRightSideFirst .5s forwards ease-in;transform-style:preserve-3d;transform-origin:0 50%;animation:rotateRightSideFirst .5s forwards ease-in}@-webkit-keyframes rotateRightSideFirst{50%{-webkit-transform:translateZ(-50px) rotateY(5deg);-webkit-animation-timing-function:ease-out}100%{-webkit-transform:translateZ(-200px)}}@-moz-keyframes rotateRightSideFirst{50%{-moz-transform:translateZ(-50px) rotateY(5deg);-moz-animation-timing-function:ease-out}100%{-moz-transform:translateZ(-200px)}}@keyframes rotateRightSideFirst{50%{transform:translateZ(-50px) rotateY(5deg);animation-timing-function:ease-out}100%{transform:translateZ(-200px)}}.md-effect-18 .md-content{-webkit-transform:translateX(200%);-moz-transform:translateX(200%);-ms-transform:translateX(200%);transform:translateX(200%);opacity:0}.md-show.md-effect-18 .md-content{-webkit-transform:translateX(0);-moz-transform:translateX(0);-ms-transform:translateX(0);transform:translateX(0);opacity:1;-webkit-transition:all .5s .1s;-moz-transition:all .5s .1s;transition:all .5s .1s}.md-show.md-effect-19~.md-overlay{-webkit-transition:all .5s;-moz-transition:all .5s;transition:all .5s}.md-show.md-effect-19~.container,.md-show.md-effect-19~.md-overlay{-webkit-transform-style:preserve-3d;-webkit-transform-origin:50% 100%;-webkit-animation:OpenTop .5s forwards ease-in;-moz-transform-style:preserve-3d;-moz-transform-origin:50% 100%;-moz-animation:OpenTop .5s forwards ease-in;transform-style:preserve-3d;transform-origin:50% 100%;animation:OpenTop .5s forwards ease-in}@-webkit-keyframes OpenTop{50%{-webkit-transform:rotateX(10deg);-webkit-animation-timing-function:ease-out}}@-moz-keyframes OpenTop{50%{-moz-transform:rotateX(10deg);-moz-animation-timing-function:ease-out}}@keyframes OpenTop{50%{transform:rotateX(10deg);animation-timing-function:ease-out}}.md-effect-19 .md-content{-webkit-transform:translateY(-200%);-moz-transform:translateY(-200%);-ms-transform:translateY(-200%);transform:translateY(-200%);opacity:0}.md-show.md-effect-19 .md-content{-webkit-transform:translateY(0);-moz-transform:translateY(0);-ms-transform:translateY(0);transform:translateY(0);opacity:1;-webkit-transition:all .5s .1s;-moz-transition:all .5s .1s;transition:all .5s .1s}@media screen and (max-width:32em){body{font-size:75%}}</style>
+
+
+	
+	
+    <!-- Load CSS, CSS Localstorage & WebFonts Main Function -->
+    <script>!function(e){"use strict";function t(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function n(t,n){return e.localStorage&&localStorage[t+"_content"]&&localStorage[t+"_file"]===n}function a(t,a){if(e.localStorage&&e.XMLHttpRequest)n(t,a)?o(localStorage[t+"_content"]):l(t,a);else{var s=r.createElement("link");s.href=a,s.id=t,s.rel="stylesheet",s.type="text/css",r.getElementsByTagName("head")[0].appendChild(s),r.cookie=t}}function l(e,t){var n=new XMLHttpRequest;n.open("GET",t,!0),n.onreadystatechange=function(){4===n.readyState&&200===n.status&&(o(n.responseText),localStorage[e+"_content"]=n.responseText,localStorage[e+"_file"]=t)},n.send()}function o(e){var t=r.createElement("style");t.setAttribute("type","text/css"),r.getElementsByTagName("head")[0].appendChild(t),t.styleSheet?t.styleSheet.cssText=e:t.innerHTML=e}var r=e.document;e.loadCSS=function(e,t,n){var a,l=r.createElement("link");if(t)a=t;else{var o;o=r.querySelectorAll?r.querySelectorAll("style,link[rel=stylesheet],script"):(r.body||r.getElementsByTagName("head")[0]).childNodes,a=o[o.length-1]}var s=r.styleSheets;l.rel="stylesheet",l.href=e,l.media="only x",a.parentNode.insertBefore(l,t?a:a.nextSibling);var c=function(e){for(var t=l.href,n=s.length;n--;)if(s[n].href===t)return e();setTimeout(function(){c(e)})};return l.onloadcssdefined=c,c(function(){l.media=n||"all"}),l},e.loadLocalStorageCSS=function(l,o){n(l,o)||r.cookie.indexOf(l)>-1?a(l,o):t(e,"load",function(){a(l,o)})}}(this);</script>
+    <script>loadCSS( "css/bootstrap.min.css", false, "all" );</script>
+    <script>loadCSS( "css/font-awesome.min.css", false, "all" );</script>
+    <script>loadCSS( "css/jquery.fancybox.css", false, "all" );</script>
+    <script>loadCSS( "css/main.css", false, "all" );</script>
+    <script>loadCSS( "css/owl.carousel.css", false, "all" );</script>
+    <script>loadCSS( "css/owl.theme.css", false, "all" );</script>
+    <script>loadCSS( "css/jquery.fullPage.css", false, "all" );</script>
+    <script>loadCSS( "css/style.css", false, "all" );</script>
+
+	
+	  <script>loadCSS( "dist/aos.css", false, "all" );</script>
+  <script>loadCSS( "css/ihover.css", false, "all" );</script>
+ 
+
+</head>
+<body>
+    <header>
+        <div class="block-1" id="manned-flight">
+            <div class="container">
+               <div class="right">
+                   <nav id="primary">
+                       <ul>
+                           <li>
+                               <h3>Home</h3>
+                               <a class="manned-flight" href="#manned-flight">1</a>
+                           </li>
+                           <li>
+                               <h3>What we do</h3>
+                               <a class="frameless-parachute" href="#frameless-parachute">2</a>
+                           </li>
+                           <li >
+                               <h3>Project specifications</h3>
+                               <a class="english-channel" href="#english-channel">3</a>
+                           </li>
+                           <li >
+                               <h3>Our founders</h3>
+                               <a class="Our-founders" href="#Our-founders">4</a>
+                           </li>
+						   <li >
+                               <h3>Why Rabulus</h3>
+                               <a class="Why-Rabulus" href="#Why-Rabulus">5</a>
+                           </li>
+						   <li >
+                               <h3>Process</h3>
+                               <a class="about" href="#about">6</a>
+                           </li>
+                       </ul>
+                   </nav>
+               </div>
+                <div class="header">
+                    <div class="logo"></div>
+                    <div class="contact">
+                        <a href="tel:+00 000 0000" class="tel">+00 000 0000</a><br>
+                        <a href="#" class="contact-us md-trigger"  data-modal="modal_callback">Contact us</a>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="left">
+                        <h1>
+                        <span>Web development
+                        <br>and IT-solutions</span>
+                            <br>which perfectly
+                            <br>fit your business
+                        </h1>
+                        <h3>
+                            Make your creative ideas come true
+                            and get the impressive result
+                        </h3>
+                    </div>
+                    <div class="right">
+                        <a class="arrow lia1" id="clickme1"><i class="fa fa-long-arrow-left" aria-hidden="true"></i></a>
+                        SCROLL DOWn
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </header>
+  <section class="block-2" id="wrap1" >
+        <div class="container">
+            <h3>
+                Stop for a second
+            </h3>
+            <h2>
+                and ask yourself 
+                <br>the following 3 questions
+            </h2>
+            <ul class="content">
+     
+                <li data-aos="fade-up"
+     data-aos-delay="50" data-aos-once="true"   data-aos-anchor-placement="top-bottom">    
+						
+			
+				<div id="scene_1" class="scene_1">
+				
+				
+				   <div class="number layer" data-depth="4.00"></div>
+                  </div>
+		
+				<div id="scene_2">
+				<div class="info layer" data-depth="3.0">
+			
+				
+						<div class="main-text">
+							Is your business
+							profitable enough?
+						</div>
+			
+				
+						<div class="text">
+							Our team of strategists, designers
+							and engineers is fully client-oriented.
+							Each of our projects is a child that we grow with care.
+						</div>
+					</div>
+				
+				</div>
+		
+           
+				   <div class="clearfix"></div>
+                </li>
+				
+				
+                <li data-aos="fade-up"
+   data-aos-delay="150" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+	 
+	 <div id="scene_3" class="scene_2">
+				
+				
+				   <div class="number layer" data-depth="4.00"></div>
+                  </div>
+              	<div id="scene_4">
+                    <div class="info layer" data-depth="3.00">
+                        <div class="main-text">
+                            Would you like to create
+                            something special,
+                            original and unusual?
+                        </div>
+                        <div class="text">
+                            We work on telling the brand’s unique story. Your product or service will be carefully wrapped in.
+                        </div>
+                    </div>
+				 </div>
+                    <div class="clearfix"></div>
+                </li>
+                <li data-aos="fade-up"
+     data-aos-delay="250" data-aos-once="true" data-aos-anchor-placement="top-bottom">
+	 
+                  <div id="scene_5" class="scene_2">
+				
+				
+				   <div class="number layer" data-depth="4.00"></div>
+                  </div>
+				  
+				  	<div id="scene_6">
+                    <div class="info layer" data-depth="3.00">
+                        <div class="main-text">
+                            And how about achieving
+                            a long-term success?
+                        </div>
+                        <div class="text">
+                            Our team creates effective solutions that help our clients’ product not only blast off but remain profitable for a long time.
+                        </div>
+                    </div>
+					   </div>
+                    <div class="clearfix"></div>
+                </li>
+            </ul>
+            <div class="clearfix"></div>
+            <div class="bot-block">
+                <div class="small-text">
+                    We can offer you
+                </div>
+                <div class="big-text">
+                    A different approach <br>  and
+                    solutions proved successful
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="block-3 " ">
+        <div class="container">
+            <h3>
+                Fill in the form below
+            </h3>
+            <h2>
+                AND get 3 months of
+                <br>maintenance <span><br class="bre">for free</span>
+            </h2>
+            <div class="block-1-form">
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Rabulus">
+                    <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                    <input type="hidden" name="form_subject" value="AND get 3 months of maintance for free">
+                    <!-- END Hidden Required Fields -->
+                    <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                    </div>
+                    <!-- Просто любое дополнительное поле -->
+                    <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value="nO2Sq"/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="cb tc">
+                        <button type="submit" class="btn btn-block" name="send">Get it free</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div class="bot-text">
+                Please trust us, we will never send you spam
+            </div>
+        </div>
+    </section>
+    <section class="block-4 "  id="frameless-parachute">
+        <div class="container">
+            <h3>
+                <!-- What we do -->
+            </h3>
+            <h2>
+                What we do
+            </h2>
+            <div class="tabs">
+                <ul class="nav nav-tabs">
+                    <!--<li class="active"><a data-toggle="tab" href="#home">Landing pages</a></li>-->
+                    <li class="active"><a data-toggle="tab" href="#menu1">Platforms</a></li>
+                    <li><a data-toggle="tab" href="#menu2">Multipage websites</a></li>
+                    <li><a data-toggle="tab" href="#menu3">Corporate portals</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div id="home" class="tab-pane fade ">
+                       <div class="content">
+                            <div class="left">
+                                <div class="img"><img src="img/block-4-img-1.png" alt=""/></div>
+                                <div class="title">
+                                    Landing pages
+                                </div>
+                                <div class="text">
+                                    One page websites, sometimes very long vertically,
+                                    which help to convert visitors into sales or leads.
+                                    Seems that this technology is one of the trendiest
+                                    and most effective. It helps to boost up sales and
+                                    propel business to the next level.
+                                </div>
+                            </div>
+                           <div class="right">
+                               <span>Technology:</span> WordPress
+                               <br><br>
+                                <span>Specification:</span> a fully
+                               custom WordPress page
+                               with a custom design
+                               <br><br>
+                               <span> Timeframe:</span> 3-6 weeks
+                               (including design creation)
+                               <br><br>
+                               <span> Team composition:</span>
+                               1PM/BA, 1 WordPress
+                               developer, 1 designer.
+
+                           </div>
+                       </div>
+                    </div>
+                    <div id="menu1" class="tab-pane fade in active">
+                        <div class="content">
+                            <div class="left">
+                                <div class="img"><img src="img/block-4-img-2.png" alt=""/></div>
+                                <div class="title">
+                                    Platforms
+                                </div>
+                                <div class="text">
+                                    Websites with a complex structure offering different roles for users (administrator, editors, agents and users). Some functions can be password protected as well as paid. 
+
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span>Technology:</span> Drupal, Yii Framework, Ruby on Rails, PHP, Node.js, AngularJS.
+                                <br><br>
+                                <span>Specification:</span> a fully
+                                custom WordPress page
+                                with a custom design
+                                <br><br>
+                                <span> Timeframe:</span> 3-6 months
+                                <br><br>
+                                <span> Team composition:</span>
+                                1PM/BA, 1 FrontEnd
+                                developer, 1 BackEnd developer, 1 designer.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu2" class="tab-pane fade">
+                        <div class="content">
+                            <div class="left">
+                                <div class="img"><img src="img/block-4-img-3.png" alt=""/></div>
+                                <div class="title">
+                                    Custom multipage websites
+                                </div>
+                                <div class="text">
+                                    Our team creates custom websites with many pages of different types. Using a content management system administrator can modify contents and create new pages
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span>Technology:</span> WordPress, Drupal
+                                <br><br>
+                                <span>Specification:</span> a fully
+                                custom WordPress page
+                                with a custom design
+                                <br><br>
+                                <span> Timeframe:</span> 2-4 months
+                                <br><br>
+                                <span> Team composition:</span>
+                                1PM/BA, 1 WordPress
+                                developer, 1 designer.
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="menu3" class="tab-pane fade">
+                        <div class="content">
+                            <div class="left">
+                                <div class="img"><img src="img/block-4-img-4.png" alt=""/></div>
+                                <div class="title">
+                                    Corporate portals
+                                </div>
+                                <div class="text">
+                                    Complex websites that contain pages about different departments of a company, company’s registry of employees and information about them, corporate documentation available for users with specific roles.
+
+                                </div>
+                            </div>
+                            <div class="right">
+                                <span>Technology:</span> Drupal, Yii Framework, Ruby on Rails, PHP, Node.js, AngularJS
+                                <br><br>
+                                <span>Specification:</span> a fully
+                                custom WordPress page
+                                with a custom design
+                                <br><br>
+                                <span> Timeframe:</span> 2,5-4 months
+                                <br><br>
+                                <span> Team composition:</span>
+                                1PM/BA, 1 FrontEnd
+                                developer, 1 BackEnd developer, 1 designer.
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block-5 " id="english-channel">
+        <div class="container">
+            <h3>
+                And how about professional project specifications and estimate for free?
+            </h3>
+            <h2>
+                specifications
+                <br>and estimate
+                <br class="bre"><span>for free?</span>
+            </h2>
+            <ul class="block-5-ul">
+                <li>
+                    <div class="number">1</div>
+                    <div class="right">
+                        <div class="top-text">
+                            Business ideas
+                        </div>
+                        <div class="bot-text">
+                            Tell us more about
+                            your business and
+                            ideas you’d like to
+                            implement
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="number">2</div>
+                    <div class="right">
+                        <div class="top-text">
+                            Q&A sessions
+                        </div>
+                        <div class="bot-text">
+                            Have 3 Q&A sessions with our business analysts and developers
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="number">3</div>
+                    <div class="right">
+                        <div class="top-text">
+                            Some header
+                        </div>
+                        <div class="bot-text">
+                            Verify your idea and get your own project specifications which will help you develop most effective web-product
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="block-3 ">
+        <div class="container">
+            <h3>
+                Fill in the form below
+            </h3>
+            <h2>
+                And Get 3 Q&A
+                <br>sessions <span><br class="bre">for free</span>
+            </h2>
+            <div class="block-1-form">
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Rabulus">
+                    <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                    <input type="hidden" name="form_subject" value="AND GET 3 Q&A sessions for free">
+                    <!-- END Hidden Required Fields -->
+                    <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                    </div>
+                    <!-- Просто любое дополнительное поле -->
+                    <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value="nO2Sq"/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="cb tc">
+                        <button type="submit" class="btn btn-block" name="send">Get it for free</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div class="bot-text">
+                Please trust us, we will never send you spam
+            </div>
+        </div>
+    </section>
+    <section class="block-7" id="Our-founders">
+        <div class="container">
+            <h3>
+                <!--What we do-->
+            </h3>
+            <h2>
+                Our founders
+            </h2>
+            <ul class="block-7-ul">
+                <li>
+                    <div class="content">
+					
+					 <!-- normal -->
+					<div class="ih-item circle effect6 scale_up"><a>
+						<div class="img"><img src="img/block-7-founder-1.png" alt="img"></div>
+						<div class="info">
+					  <img src="img/stan.jpg" alt="img">
+						</div></a></div>
+					<!-- end normal -->
+                   
+                        <div class="founder-info">
+                    <span>
+                        Hi, I’m Stan Solodky
+                    </span>
+                           
+                           <p> and I’ve been developing software solutions for <br>the last 15 years.</p>
+                       
+                           
+                         <p>Having worked with the top digital agencies, <br>Forbes’ 500 companies, outsourcing companies <br>and startups during my career I have found what <br>makes a web solution successful.</p>
+                            
+                            <p>I’ve also seen common pains that different types of companies experience when building something online and I have developed an approach how to successfully deal with them</p>
+                            
+                            <p> At Rabulus, I have built a team with the most talented people to empower small and medium businesses and succeed in the era of technologies. Let us take your web needs and handle them in compliance with the highest standards.</p>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="content">
+                         <!-- normal -->
+							<div class="ih-item circle effect6 scale_up"><a>
+							<div class="img"><img src="img/block-7-founder-1.png" alt="img"></div>
+							<div class="info">
+						  <img src="img/stan.jpg" alt="img">
+						</div></a></div>
+					<!-- end normal -->
+                        <div class="founder-info">
+                    <span>
+                       Hello there! I’m Olga Grynko
+                    </span>
+                            <p>I am a co-founder of Rubulus.</p>
+                           
+                         
+                            <p>My work is to help our team get their job done perfectly well. One of the most important business insights is understanding that the client and the developer work in one team.</p>
+                            
+                            <p>We’re co-operating to reach our mutual goal and that’s why communication between us really matters.</p>
+                            
+                            <p>We do our best to optimize and improve all operating processes because each of our projects is like a baby: we help it to be born it’s birth, raise it, smile when it makes first steps and we do really care about its future.
+</p>
+                            
+
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section id="Why-Rabulus" class="block-8" >
+        <div class="container">
+            <h3>
+                There are at least 5 reasons
+            </h3>
+            <h2>
+                why you should
+                <span>choose Rabulus</span>
+            </h2>
+            <h4>
+               While most of other digital agencies have one particular specialization,<br> we are universal and provide turnkey solutions with UI/UX design of high quality,<br> powerful copywriting, user-friendly interface and the purest code you’ve ever seen. 
+
+            </h4>
+            <ul class="block-8-ul">
+                <li>
+                    <div class="icon"></div>
+                    <div class="info">
+                        <span>
+                            15+ years of experience
+                        </span>
+                        <br><br>
+                       Most members of our team have great experience in developing web projects of different type and complexity.
+                    </div>
+                </li>
+                <li>
+                    <div class="icon"></div>
+                    <div class="info">
+                        <span>
+                            We’re flexible and effective
+                        </span>
+                        <br><br>
+                        Our team is small but we are a well-oiled machine that makes websites of high quality that meet the requirements of both the customer and the market.
+                    </div>
+                </li>
+                <li class="m-none">
+                    <div class="icon"></div>
+                    <div class="info">
+                        <span>
+                            Budget <br> efficiency
+                        </span>
+                        <br><br>
+                        We have collaborated with small and medium-sized businesses and know how to make the best from your budget.
+
+                    </div>
+                </li>
+                <li class="m-none">
+                    <div class="icon"></div>
+                    <div class="info">
+                        <span>
+                            Creativity <br> and motivation
+                        </span>
+                        <br><br>
+                        We love our projects and always strive for creating something interesting and unique. You can be sure that your website will be 100% original and competitive.
+
+                    </div>
+                </li>
+            </ul>
+            <div class="bot-block">
+                <div class="small-text">
+                    If our ideas were seeds
+                </div>
+                <div class="big-text">
+                    We’d have grown <br>a forest of succesful <br>businesses
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="block-3 ">
+        <div class="container">
+            <h3>
+                Fill in the form below
+            </h3>
+            <h2>
+                AND get 3 months of <br>maintance <span><br class="bre">for free</span>
+            </h2>
+            <div class="block-1-form">
+                <form  method="POST" class="form-inline" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Rabulus">
+                    <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                    <input type="hidden" name="form_subject" value="AND get 3 months of maintance for free">
+                    <!-- END Hidden Required Fields -->
+                    <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                    </div>
+                    <!-- Просто любое дополнительное поле -->
+                    <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value="nO2Sq"/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="cb tc">
+                        <button type="submit" class="btn btn-block" name="send">Get it free</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+            </div>
+            <div class="bot-text">
+                Please trust us, we will never send you spam
+            </div>
+        </div>
+    </section>
+    <section class="block-9" id="about">
+        <div class="container">
+            <h3>
+                Only 7 steps
+            </h3>
+            <h2>
+                ARE BETWEEN <br>you the great <br><span>business boost</span>
+            </h2>
+            <ul class="block-9-ul">
+                <li >
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400" data-aos-delay="600" >
+                        <img src="img/block-9-li-1.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400"  data-aos-delay="600" >
+                        <span>1.Contact</span>
+                        <br><br>
+                        After filling in the form on this website our team will email or phone you back in 24 hours. We will take a close look at the benchmark data and ask some questions about effective planning and milestones of your project. 
+
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400"  data-aos-delay="600"  >
+                        <img src="img/block-9-li-2.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400" data-aos-delay="600" >
+                        <span>2.Goal oriented analysis</span>
+                        <br><br>
+                        At this stage our team starts to analyse the market, competitors, trends, seasonality, case studies and so on. We use all the information provided and generate interesting and challenging ideas for your business. Beware! Frequent calls and discussions with a client may be found in this part. :)
+
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400"  data-aos-delay="600"  >
+                        <img src="img/block-9-li-3.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400"  data-aos-delay="600" >
+                        <span>3.Effective offer</span>
+                        <br><br>
+                        After discussing we make a strong business offer for your product or service which perfectly fits your budget and schedule. We will explain the cost and timing and provide you with the list of tasks that will be implemented.
+
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true"  data-aos-duration="400"  data-aos-delay="600" >
+                        <img src="img/block-9-li-4.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600" >
+                        <span>4.Contract</span>
+                        <br><br>
+                        The next stage is signing a contract. It helps secure our relations and identify the objectives of a specific project. We are 100% responsible for the results you get.
+
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600"  >
+                        <img src="img/block-9-li-5.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600" >
+                        <span>5.Implementation</span>
+                        <br><br>
+                        Once the contract is signed, our team starts project implementation. You will be able to keep track of the process and each step will be confirmed. Our team will work according to the schedule provided in the offer. You can be sure that we’ll make our best to create one more web solution we’re proud of. 
+                    </div>
+                </li>
+                <li>
+                    <div class="icon" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600"  >
+                        <img src="img/block-9-li-6.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"   data-aos-delay="600" >
+                        <span>6.On time delivery</span>
+                        <br><br>
+                        Our team provides status reports and schedule updates for your convenience. You have nothing to worry about — everything will be on time. You can ask us any questions that are bothering you and share ideas, thoughts and insights.
+                    </div>
+                </li>
+                <li>
+                    <div class="icon befor__none" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600" >
+                        <img src="img/block-9-li-7.png" alt="">
+                    </div>
+                    <div class="inform" data-aos="fade-up"
+     data-aos-anchor-placement="center-bottom" data-aos-once="true" data-aos-duration="400"  data-aos-delay="600"  >
+                        <span>7.Maintenance</span>
+                        <br><br>
+                        When the project is done and bugfixes are closed we can maintain cooperation by signing a support contract. Our specialists will help you stay flexible, competitive and grow sales opportunities of your business.
+
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <section class="block-10">
+        <div class="container">
+            <h3>
+                Got a problem? We'd love to solve it!
+            </h3>
+            <h2>
+                Grab your phone or <br>keyboard and <span>reach us </span>
+            </h2>
+            <div class="content">
+                <div class="block-1-form">
+                    <form  method="POST" class="form-inline" action="javascript:void(null);">
+                        <!-- Hidden Required Fields -->
+                        <input type="hidden" name="project_name" value="Rabulus">
+                        <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                        <input type="hidden" name="form_subject" value="Fill form Below">
+                        <!-- END Hidden Required Fields -->
+                        <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="Name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                        </div>
+                        <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="Email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                        </div>
+                        <div class="form_input">
+                           <span class="field">
+                             <input class="tel" type="tel" name="Phone" required="" value="" placeholder="Enter Your Phone Number" />
+                           </span>
+                        </div>
+                        <div class="form_input">
+                           <span class="field">
+                            <textarea name="Comment" class="area" placeholder="Enter Your Comment"></textarea>
+                           </span>
+                        </div>
+                        <!-- Просто любое дополнительное поле -->
+                        <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                        <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                        <input type="hidden" class="pacet" name="form_pacet" value="">
+                        <!-- GET RESPONCE INPUTS -->
+                        <input type="hidden" name="start_day" value="0"/>
+                        <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                        <input type="hidden" name="campaign_token" value=""/>
+                        <!-- GET RESPONCE INPUTS -->
+                        <div class="cb tc">
+                            <button type="submit" class="btn btn-block" name="send">Contact us</button>
+                        </div>
+                        <div class="clear"></div>
+                    </form>
+                    <div class="bot-text">
+                        Please trust us, we will never send you spam
+                    </div>
+                </div>
+                <div class="info">
+                    <ul class="block-10-ul">
+                        <li>
+                            <div class="head">
+                                <span><i class="fa fa-phone" aria-hidden="true"></i></span>Phone:
+                            </div>
+                            <div class="cont_info">
+                                <a href="tel:+0 000 000 0000">+0 000 000 0000</a><br>
+                                <a href="tel:+00 00 0000 0000">+00 00 0000 0000</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="head">
+                                <span><i class="fa fa-envelope" aria-hidden="true"></i></span>E-mail:
+                            </div>
+                            <div class="cont_info">
+                                <a href="E-mail@gmail.com">E-mail@gmail.com</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="head">
+                                <span><i class="fa fa-map-marker" aria-hidden="true"></i></span>Mailing adress:
+                            </div>
+                            <div class="cont_info">
+                                adress<br>
+                                Orlando
+                            </div>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+            <ul class="politics">
+                <li><a class="md-trigger" data-modal="modal_politics_one">Delivery policy </a></li>
+                <li><a class="md-trigger" data-modal="modal_politics_two">Guarantee of return</a></li>
+  
+                <li><a class="md-trigger" data-modal="modal_politics_three">User Agreement</a></li>
+            </ul>
+            
+            <ul class="politics ul_gm">
+                <!--<li> <a class="GM" href="http://geniusstudio.me/">Powered by: Genius Studio</a></li>-->
+           
+            </ul>
+            
+           
+        </div>
+    </footer>
+
+<div id="page-preloader"><div class="contpre"><span class="spinner"></span></div></div>
+<div class="md-modal md-modal_info md-effect-1 md_large" id="modal_politics_one" style="max-width: 630px!important;">
+    <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><i class="fa fa-close"></i></a>
+            </span>
+        <div class="titlebox">
+            <h2 style="font-size: 24px;">Delivery policy</h2>
+        </div>
+       <div class="md_content">
+
+   
+
+    <p>Your privacy is very important to us. We want to see your work on the Internet as much as possible was the most pleasant and helpful, and you quietly used a wide range of information, tools and opportunities offered by the Internet.</p>
+
+    <p>Personal Info Members gathered during registration (or at any other time) is mainly used for the preparation of product or service in accordance with your needs. Your information will not be shared or sold to third parties. However, we can partially disclose personal information in special cases, described in "Consent to sending"</p>
+
+    <p><strong>What data are collected on site</strong></p>
+
+    <p>If voluntary registration to mailing you send your name and E-mail through the registration form.</p>
+
+    <p><strong>For what purpose the data are collected</strong></p>
+
+    <p>The name is used to refer to you personally, and your e-mail to send you mailings of letters, news, useful materials, commercial offers.</p>
+    
+    <p>Your name and e-mail is not transmitted to third parties under any circumstances except in cases related to the performance requirements of the legislation.</p>
+
+    <p>You can unsubscribe from the mailing of letters and removed from the database in your contact information at any time by clicking the unsubscribe link present in each email.</p>
+
+    <p><strong>As this data is used</strong></p>
+
+    <p>With the help of these data provides information about the activities of visitors to the website in order to improve its content, improve the functionality of the site and, as a consequence, the creation of quality content and services for visitors.</p>
+
+    <p>You can always change your browser settings so that the browser has blocked all files or alert the sending of files. Note here that some functions and services will not function properly.</p>
+
+    <p><strong>As this data is protected</strong></p>
+
+    <p>To protect your personal information, we use a variety of administrative, managerial, and technical security measures. Our company adheres to various international monitoring standards to the operation of the personal information, which include certain control measures for the protection of the information collected on the Internet.</p>
+
+    <p>Our employees are trained to understand and comply with these controls, they are familiar with our privacy notice, rules and regulations.</p>
+
+    <p>Nevertheless, despite the fact that we strive to protect your personal information, you should also take steps to protect it.</p>
+
+    <p>We strongly recommend that you take all possible precautions to stay online. Organised our services and websites provide measures to protect against leakage, misuse and alteration of information that we control. Despite the fact that we are doing everything possible to ensure the integrity and security of their network and systems, we can not guarantee that our security measures will prevent unauthorized access to this information, hackers outside organizations.</p>
+
+    <p>If you change this privacy policy, you can read about these changes on this page or, in special cases, receive a notification to your e-mail.</p>
+
+  </div>
+    </div>
+</div>
+<div class="md-modal md-modal_info md-effect-1 md_large" id="modal_politics_two" style="max-width: 630px!important;">
+    <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><i class="fa fa-close"></i></a>
+            </span>
+        <div class="titlebox">
+            <h2 style="font-size: 24px;">Guarantee of return</h2>
+        </div>
+        <div class="md_content">
+
+
+    <p><strong>In accordance with current legislation</strong>, Administration disclaims any warranties and representations that may otherwise be implied and excludes all liability in respect of the Site, Content, and to use them.</p>
+
+    <p>Under no circumstances will the Site Administration will not be liable to any party for any direct, indirect, special or other consequential damages arising from any use of the information on this Site or any other website to which there is a hyperlink to our opinion!, Occurrence dependence, loss of productivity, dismissal or interruption of working activity, as well as and contributions of educational institutions, for any loss of profit, interruption of business, loss of programs or data in your information systems or otherwise, arising in connection with your access, use or inability to use site Content or any related website, or failure of performance, error, omission, interruption, defect, operation or delay in transmission, computer virus or system failure, even if the administration is clearly advised of the possibility of such damages.</p>
+
+    <p>You agree that all possible disputes shall be settled by law.</p>
+
+    <p>You agree that standards and consumer protection laws may not be applied to the use of their sites because it has no paid services.</p>
+
+    <p>By using this Website, you agree to the "Disclaimer" and established rules and accept the responsibility that may be assigned to you.</p>
+
+  </div>
+    </div>
+</div>
+<div class="md-modal md-modal_info md-effect-1 md_large" id="modal_politics_three" style="max-width: 630px!important;">
+    <div class="md-content">
+            <span class="btn_close_modal">
+                <a class="md-close"><i class="fa fa-close"></i></a>
+            </span>
+        <div class="titlebox">
+            <h2 style="font-size: 24px;">User Agreement</h2>
+        </div>
+       <div class="md_content">
+
+
+
+    <p>Filling out the form on our website - you agree to our privacy policy. You agree that we may disclose your personal information in the following cases:</p>
+
+    <p><strong>1) With your consent:</strong> In all other cases, our Company will obtain your express consent to the transmission of information about you to third parties. For example, our company can implement a joint offer or contest with a third party, then we will ask for your permission to share your personal information with a third party.</p>
+
+    <p><strong>2) Companies operating on our behalf:</strong> We cooperate with other companies that perform on our behalf business support functions, in connection with which your personal information may be disclosed in part. We demand that such companies use the information only to provide the services under the contract; they are forbidden to pass this information to others in situations other than when it is caused by the need to provide specified services. Examples of business support functions: fulfillment, the realization of applications, issue of prizes and bonuses, conducting surveys among clients and management information systems. We also disclose a generalized non-personal information when selecting service providers.</p>
+
+    <p><strong>3) Subsidiaries and joint ventures:</strong> Under the subsidiary or joint venture refers to the organization, at least 50% of the equity of which belongs to the Company. When you send your information partner for the subsidiary or joint venture, our company needs not to disclose this information to other parties for marketing purposes or use your information in any way contrary to your choice. If you indicated that you do not wish to receive from our company any marketing materials, we will not disclose your information to its partners in subsidiaries and joint ventures for marketing purposes.</p>
+
+    <p><strong>4) In conjunction positioning or partner pages:</strong> Our Company may share information with partner companies with whom realizes special offers and promotional activities jointly positioned on our site. When requesting personal data on these pages, you will get a warning about the transfer of information. Partner uses any information provided by you in accordance with their own notification of privacy, with which you can read before providing information about themselves.</p>
+
+    <p><strong>5) When transfer of control over the enterprise:</strong> Our company reserves the right to transfer your personal data in relation to the total or partial sale or a transfer of our company or its assets. Our company will give you the opportunity to refuse to transmit information about themselves Upon sale or a transfer of business. In some cases, this may mean that the new organization will not be able to continue to provide you with services or products previously offered by our company.</p>
+
+    <p><strong>6) Law enforcement agencies:</strong> Our Company may, without your consent to disclose personal information to third parties for any of the following reasons: in order to avoid violations of the law, regulations or court decisions; participation in government investigations; aid in the prevention of fraud; as well as strengthening and protection of the rights of the Company or its subsidiaries.</p>
+
+    <p>All personal information that is transferred to you for registering on our site may be changed at any time or completely deleted from our records upon your request. To do this, you need to contact us in any way convenient for you, using the contact information posted in a special section of our site.</p>
+
+    <p>If you want to opt out of receiving emails our regular newsletter, you can do so at any time via a special link, which is located at the end of each message.</p>
+
+  </div>
+    </div>
+</div>
+
+
+<div class="md-modal md__top md-effect-1" id="modal_top" >
+
+
+    <div class="md-content tc">
+            <span class="btn_close_modal">
+                     <a class="md-close"><img src="images/close.png" alt="close"></a>
+            </span>
+        <div class="titlebox">
+		   <div class="box__icone">
+               <img src="images/checklist.png" alt="icone">
+           </div>
+            <h2 style="color:#000;">Get checklist <span><br class="bre">for free</span></h2>
+            
+            <p class="pointer">With the help of our checklist you can make up a clear 
+            <br>technical specification or verify an already existing one 
+            <br>in order not to go beyond the actual budget plan</p>
+            
+            <p class="black">Fill in the form below and get checklist for free:</p>
+        </div>
+        <div>
+            <div class="block-1-form">
+                <form  method="POST" class="form-inline popap" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Rabulus">
+                    <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                    <input type="hidden" name="form_subject" value="Fill form Below">
+                    <!-- END Hidden Required Fields -->
+                    <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="Name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="Email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                    </div>
+        
+                    
+                    <!-- Просто любое дополнительное поле -->
+                    <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="cb tc">
+                        <button type="submit" class="btn btn-block" name="send">Get it free</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+                <div class="bot-text">
+                    Please trust us, we will never send you spam
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="md-modal md-effect-1" id="modal_callback" >
+    <div class="md-content tc">
+            <span class="btn_close_modal">
+                <a class="md-close"><i class="fa fa-close"></i></a>
+            </span>
+        <div class="titlebox">
+            <h2 style="color:#000;">Fill form Below</h2>
+        </div>
+        <div>
+            <div class="block-1-form">
+                <form  method="POST" class="form-inline popap" action="javascript:void(null);">
+                    <!-- Hidden Required Fields -->
+                    <input type="hidden" name="project_name" value="Rabulus">
+                    <input type="hidden" name="admin_email" value="oman.92@ukr.net">
+                    <input type="hidden" name="form_subject" value="Fill form Below">
+                    <!-- END Hidden Required Fields -->
+                    <div class="form_input">
+                           <span class="field">
+                              <input class="names" type="text"  name="Name" required=""  placeholder="Enter Your Name" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="mail" type="email" name="Email" required="" value="" placeholder="Enter Your E-mail" />
+                           </span>
+                    </div>
+                    <div class="form_input">
+                           <span class="field">
+                             <input class="tel" type="tel" name="Phone" required="" value="" placeholder="Enter Your Phone Number" />
+                           </span>
+                    </div>
+                    
+                    <!-- Просто любое дополнительное поле -->
+                    <!--                <input type="hidden" name="other_data" value="Любое значение" />-->
+                    <!-- Динамическое дополнительное поле для передачи данных с кнопок по всему сайту -->
+                    <input type="hidden" class="pacet" name="form_pacet" value="">
+                    <!-- GET RESPONCE INPUTS -->
+                    <input type="hidden" name="start_day" value="0"/>
+                    <!-- Если нужно отправлять и на почту и на GetResponse - указываем campaign_token -->
+                    <input type="hidden" name="campaign_token" value=""/>
+                    <!-- GET RESPONCE INPUTS -->
+                    <div class="cb tc">
+                        <button type="submit" class="btn btn-block" name="send">Contact us</button>
+                    </div>
+                    <div class="clear"></div>
+                </form>
+                <div class="bot-text">
+                    Please trust us, we will never send you spam
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="md-modal md-effect-1" id="modal_callback_ok">
+    <div class="md-content box__masag tc">
+        <div class="titlebox">
+            <div class="title">
+                <h2>Your message is sent</h2>
+            </div>
+        </div>
+        <div class="cb block-1-form">
+            <button class="md-close btn">Return</button>
+        </div>
+    </div>
+</div>
+   <script src="dist/aos.js"></script>
+<a id="call_ok" class="md-trigger hidden" data-modal="modal_callback_ok"></a>
+<div class="md-overlay"></div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script src="js/bootstrap.min.js" type="text/javascript"></script>
+<script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script>
+    $(document).ready(function() {
+
+        $("#owl-demo").owlCarousel({
+            items : 3,
+            itemsTablet: [1280,2],
+            itemsMobile: [767,1],
+            navigation : true,
+            pagination: false,
+            navigationText : false,
+            autoPlay:4000
+        });
+    });
+</script>
+
+<script src="js/wow.min.js" type="text/javascript"></script>
+<script src="js/jquery.simplyscroll.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+    $(document).ready(function () {
+        $("#clickme1").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap1").offset().top
+            }, 2000);
+            return false;
+        });
+        $("#clickme2").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap2").offset().top
+            }, 2000);
+            return false;
+        });
+        $("#clickme3").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap3").offset().top
+            }, 2000);
+            return false;
+        });
+        $("#clickme4").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap4").offset().top -20
+            }, 2000);
+            return false;
+        });
+        $("#clickme5").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap5").offset().top
+            }, 2000);
+            return false;
+        });
+        $("#clickme6").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap6").offset().top
+            }, 2000);
+            return false;
+        });
+        $("#clickme7").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap7").offset().top -20
+            }, 2000);
+            return false;
+        });
+        $("#clickme8").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap8").offset().top -10
+            }, 2000);
+            return false;
+        });
+        $("#clickme9").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap9").offset().top -30
+            }, 2000);
+            return false;
+        });
+        $("#clickme10").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap10").offset().top -30
+            }, 2000);
+            return false;
+        });
+        $("#clickme11").click(function () {
+            $(".lia1").removeClass("active");
+            $(this).addClass("active");
+            $('html, body').animate({
+                scrollTop: $("#wrap11").offset().top -30
+            }, 2000);
+            return false;
+        });
+    });
+</script>
+<script src="js/modal.js"></script>
+<script src="js/common.js"></script>
+<script src="js/parallax.js"></script>
+
+ 	<script src="js/PARALEX.js"></script>
+	
+	
+
+ <script>
+      AOS.init({
+        easing: 'ease-in-out-sine',
+		 disable: 'mobile'
+      });
+
+
+	// 1?
+	var scene = document.getElementById('scene_1');
+	var parallax = new Parallax(scene);
+	
+	
+		// 2?
+	var scene = document.getElementById('scene_2');
+	var parallax = new Parallax(scene,{
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8,
+  originX: 0.0,
+  originY: 1.0
+});
+	
+	
+		// 3?
+	var scene = document.getElementById('scene_3');
+	var parallax = new Parallax(scene);
+	
+	
+			// 4?
+	var scene = document.getElementById('scene_4');
+	var parallax = new Parallax(scene,{
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8,
+  originX: 0.0,
+  originY: 1.0
+});
+	
+			// 5?
+	var scene = document.getElementById('scene_5');
+	var parallax = new Parallax(scene);
+	
+	
+			// 6?
+	var scene = document.getElementById('scene_6');
+	var parallax = new Parallax(scene,{
+  calibrateX: false,
+  calibrateY: true,
+  invertX: false,
+  invertY: true,
+  limitX: false,
+  limitY: 10,
+  scalarX: 2,
+  scalarY: 8,
+  frictionX: 0.2,
+  frictionY: 0.8,
+  originX: 0.0,
+  originY: 1.0
+});
+	
+	
+
+	</script>
+</body>
+</html>

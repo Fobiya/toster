@@ -1,0 +1,250 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900&subset=latin,cyrillic-ext);
+@font-face {
+    font-family: "UniSans-Regular";
+    src: url("/fonts/UniSans-Regular/UniSans-Regular.eot");
+    src: url("/fonts/UniSans-Regular/UniSans-Regular.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/UniSans-Regular/UniSans-Regular.woff") format("woff"),
+    url("/fonts/UniSans-Regular/UniSans-Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BebasNeue_Regular";
+    src: url("/fonts/BebasNeue_Regular/BebasNeue_Regular.eot");
+    src: url("/fonts/BebasNeue_Regular/BebasNeue_Regular.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/BebasNeue_Regular/BebasNeue_Regular.woff") format("woff"),
+    url("/fonts/BebasNeue_Regular/BebasNeue_Regular.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BebasNeue_Bold";
+    src: url("/fonts/BebasNeue_Bold/BebasNeue_Bold.eot");
+    src: url("/fonts/BebasNeue_Bold/BebasNeue_Bold.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/BebasNeue_Bold/BebasNeue_Bold.woff") format("woff"),
+    url("/fonts/BebasNeue_Bold/BebasNeue_Bold.ttf") format("truetype");
+}
+@font-face {
+    font-family: "BebasNeueBook";
+    src: url("/fonts/BebasNeueBook/BebasNeueBook.eot");
+    src: url("/fonts/BebasNeueBook/BebasNeueBook.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/BebasNeueBook/BebasNeueBook.woff") format("woff"),
+    url("/fonts/BebasNeueBook/BebasNeueBook.ttf") format("truetype");
+}
+@font-face {
+    font-family: "fontawesome-webfont";
+    src: url("/fonts/fontawesome-webfont/fontawesome-webfont.eot");
+    src: url("/fonts/fontawesome-webfont/fontawesome-webfont.eot?#iefix")format("embedded-opentype"),
+    url("/fonts/fontawesome-webfont/fontawesome-webfont.woff") format("woff"),
+    url("/fonts/fontawesome-webfont/fontawesome-webfont.ttf") format("truetype");
+}
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+a,a:hover,a:focus,input{
+    text-decoration:none;
+    outline: none;
+}
+body{
+    font-size: 14px;
+    font-weight: 400;
+    color:#fff;
+    background-color: #fff;
+    padding-right: 0!important;
+    background-color: #ffffff;
+}
+b, strong {
+    font-weight: 700;
+}
+
+.container{
+    position: relative;
+    font-size: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.modal-open {
+    overflow: auto;
+}
+
+.block-modal input[type=text]::-webkit-input-placeholder {
+    color: #000;
+}
+.block-modal input[type=text]::-moz-placeholder {
+    color: #000;
+}
+.block-modal input[type=tel]::-webkit-input-placeholder {
+    color: #000;
+}
+.block-modal input[type=tel]::-moz-placeholder {
+    color: #000;
+}
+.block-modal input[type=email]::-webkit-input-placeholder {
+    color: #000;
+}
+.block-modal input[type=email]::-moz-placeholder {
+    color: #000;
+}
+.tel-modal::-webkit-input-placeholder {
+    color: #eee;
+}
+.tel-modal::-moz-placeholder {
+    color: #eee;
+}
+body * {
+    max-height: 1000000em !important;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    max-height: 999999px !important;
+}
+
+html * {max-height:1000000px !important;  }
+
+.modal-dialog{
+    z-index: 2000;
+    width: 375px;
+    margin: 80px auto;
+}
+.modal-content{
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.modal-body{
+    padding: 0px;
+}
+.close{
+    z-index: 2001;
+    position: absolute;
+    color:#000;
+    opacity: 1;
+    right: 6px;
+    top:7px;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 20px;
+    width: 22px;
+    height: 22px;
+    border: 1px solid #000!important;
+    text-shadow: 0 0px 0 transparent;
+}
+.close:focus, .close:hover{
+    opacity: 1;
+    color:#000;
+}
+.block-modal-title{
+    color:#292929;
+    text-align: center;
+    margin-top: 26px;
+    text-transform: uppercase;
+    line-height: 48px;
+    font-size: 40px;
+}
+.block-modal{
+    text-align: center;
+    margin-left: 467px;
+}
+.modal-border{
+    width: 273px;
+    height: 80px;
+    margin: 0 auto ;
+}
+.block-modal input[type=text]{
+    width: 258px;
+    height: 50px;
+    background-color: #f7f7f7;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 25px;
+    background-position: 3px 4px;
+    margin-right: 0px;
+    margin-bottom: 6px;
+    margin-top: 20px;
+    border: 0;
+}
+.videos{
+    list-style: none;
+}
+.block-modal input[type=tel]{
+    width: 258px;
+    height: 50px;
+    background-color: #f7f7f7;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 25px;
+    background-position: 4px 5px;
+    margin-right: 0px;
+    margin-bottom: 6px;
+    border: 0;
+}
+
+.block-modal input[type=email]{
+    width: 258px;
+    height: 50px;
+    background-color: #f7f7f7;
+    border: 0;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 14px;
+    padding-left: 25px;
+    background-position: 5px 5px;
+    margin-right: 0px;
+    margin-bottom: 6px;
+}
+.block-modal textarea{
+    width: 296px;
+    height: 105px;
+    border: 1px solid #c4c4c4;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    color: #333333;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-left: 27px;
+    background-position: 5px 5px;
+    margin-right: 0px;
+    margin-bottom: 6px;
+    resize: none;
+    outline: none;
+}
+.block-modal button{
+    width: 258px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #009688;
+    border: 2px solid #009688;
+    text-align: center;
+    line-height: 38px;
+    font-size: 24px;
+    margin-top: 16px;
+    font-family: "UniSans-Bold";
+    -webkit-transition: all 0.6s;
+    -moz-transition: all 0.6s;
+    -ms-transition: all 0.6s;
+    -o-transition: all 0.6s;
+    transition: all 0.6s;
+    outline: none;
+}
+.block-modal button:hover{
+    background-color: transparent;
+    color: #009688;
+}
+.block-modal-text{
+    font-size: 16px;
+    color: #838383;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
